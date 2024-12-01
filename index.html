@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toolbar">
+        <button id="addTextBtn">Add Text</button>
+        <button id="undoBtn">Undo</button>
+        <button id="redoBtn">Redo</button>
+        <select id="fontSelect">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+        </select>
+        <input type="number" id="fontSizeInput" min="10" max="72" value="16">
+        <button id="boldBtn">B</button>
+        <button id="italicBtn">I</button>
+    </div>
+    <div id="canvas" class="canvas">
+        <div class="text-box" contenteditable="true">Abhinav</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
